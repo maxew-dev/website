@@ -3,7 +3,7 @@ html, body{
     height:100%;
     margin:0;
     padding:0;
-    background-color:orange;
+    background-color:grey;
     display:flex;
     flex-direction:column;
     justify-content: space-around;
@@ -12,10 +12,16 @@ html, body{
 }
 
 button{
-    width:100%;
+    width:auto;
     height:auto;
     margin:10px;
     border-radius:10px;
     font-family: 'Comfortaa', cursive;
     padding:10px;
+    font-size:2em;
+    cursor:pointer;
+}
+
+button:hover, button:active{
+    filter:invert();
 }

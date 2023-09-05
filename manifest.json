@@ -4,7 +4,7 @@
     "start_url": "/",
     "id":"/website/index.html",
     "display": "standalone",
-    "background_color":"orange",
+    "background_color":"grey",
     "lang": "fr",
     "description":"My App Prototype",
     "orientation": "portrait-primary",

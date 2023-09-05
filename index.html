@@ -20,17 +20,18 @@
 
   <body>
     <main>
-        <h1>MAX TEST APP</h1>
-        <img id="image" src="icons/icon.png" alt="" />
+        <h1>MAX APP</h1>
 
         <button id="btnNotif">Notification</button>
         <button id="btnAccept">Accepter mission</button>
     </main>
 
+    <script type="text/javascript" src="js/btn.js"></script>
+
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', ()=>{
-          navigator.serviceWorker.register('worker.js').then(function(registration) {
+          navigator.serviceWorker.register('worker.js').then((registration) => {
             console.log('Worker registration successful', registration.scope);
           }, (err) => {
             console.log('Worker registration failed', err);
