@@ -1,7 +1,7 @@
 {
     "name": "MaxApp",
     "short_name": "max",
-    "start_url": "https://maxew-dev.github.io/website/index.html",
+    "start_url": "/",
     "id":"/website/index.html",
     "display": "standalone",
     "background_color":"orange",
@@ -10,8 +10,28 @@
     "orientation": "portrait-primary",
     "icons": [
       {
-        "src": "icons/icon.png",
+        "src": "icons/icon72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon192.png",
         "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon512.png",
+        "sizes": "512x512",
         "type": "image/png"
       }
     ],

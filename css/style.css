@@ -8,4 +8,14 @@ html, body{
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button{
+    width:100%;
+    height:auto;
+    margin:10px;
+    border-radius:10px;
+    font-family: 'Comfortaa', cursive;
+    padding:10px;
 }
