@@ -1,7 +1,8 @@
 var CACHE_NAME = 'MaxApp';
 var urlsToCache = [
   '/',
-  'index.html',
+  '/index.html',
+  '/page1.html',
 ];
 
 // Install a service worker

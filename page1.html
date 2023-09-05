@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+    <title>MAXAPP</title>
+    <!--
+        Feuilles de styles CSS associées,
+        Titre de la page,
+        Balises « Méta »...
+      -->
+  </head>
+
+  <body>
+    <main>
+        <h1>MAX APP</h1>
+
+        <p>Mission acceptée</p>
+    </main>
+
+    <script type="text/javascript" src="js/btn.js"></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', ()=>{
+          navigator.serviceWorker.register('worker.js').then((registration) => {
+            console.log('Worker registration successful', registration.scope);
+          }, (err) => {
+            console.log('Worker registration failed', err);
+          }).catch((err)=>{
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('Service Worker is not supported by browser.');
+      }
+    </script>
+
+  </body>
+</html>
+

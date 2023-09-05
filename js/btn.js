@@ -13,6 +13,11 @@ function initListeners()
     });
 
 
+    document.getElementById("btnAccept").addEventListener("click", (ev)=>{
+        window.location = "/page1.html";
+    });
+
+
 
 }
 
