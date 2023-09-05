@@ -1,0 +1,19 @@
+{
+    "name": "MaxApp",
+    "short_name": "max",
+    "start_url": "https://github.com/maxew-dev/website/index.html",
+    "display": "standalone",
+    "background_color":"orange",
+    "lang": "fr",
+    "description":"My App Prototype",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "icons/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "prefer_related_applications": "false"
+  }
+  
