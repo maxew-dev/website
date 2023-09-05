@@ -2,6 +2,7 @@
     "name": "MaxApp",
     "short_name": "max",
     "start_url": "https://maxew-dev.github.io/website/index.html",
+    "id":"/website/index.html",
     "display": "standalone",
     "background_color":"orange",
     "lang": "fr",
@@ -14,6 +15,6 @@
         "type": "image/png"
       }
     ],
-    "prefer_related_applications": "false"
+    "prefer_related_applications": false
   }
   
