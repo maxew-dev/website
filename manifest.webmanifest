@@ -1,7 +1,7 @@
 {
     "name": "MaxApp",
     "short_name": "max",
-    "start_url": "https://github.com/maxew-dev/website/index.html",
+    "start_url": "https://maxew-dev.github.io/website/index.html",
     "display": "standalone",
     "background_color":"orange",
     "lang": "fr",
