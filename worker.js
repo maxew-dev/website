@@ -1,8 +1,7 @@
 var CACHE_NAME = 'MaxProtoPWApp';
 var urlsToCache = [
-  '/',
-  '/index.html',
-  '/page1.html',
+  'index.html',
+  'page1.html'
 ];
 
 // Install a service worker
@@ -48,3 +47,6 @@ self.addEventListener('activate', (event) => {
     })
   );
 });
+
+
+
