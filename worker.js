@@ -1,4 +1,4 @@
-var CACHE_NAME = 'MaxApp';
+var CACHE_NAME = 'MaxProtoPWApp';
 var urlsToCache = [
   '/',
   '/index.html',
@@ -7,6 +7,7 @@ var urlsToCache = [
 
 // Install a service worker
 self.addEventListener('install', (event) => {
+  logMessage("serviceWorker installing...")
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -34,7 +35,7 @@ self.addEventListener('fetch', (event) => {
 
 // Update a service worker
 self.addEventListener('activate', (event) => {
-  var cacheWhitelist = ['MaxApp'];
+  var cacheWhitelist = ['MaxProtoPWApp'];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
