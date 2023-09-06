@@ -20,9 +20,9 @@
 
   <body>
     <main>
-        <h1>MAX APP</h1>
+        <img src="icons/icon144.png" alt="">
 
-        <p>Mission acceptée</p>
+        <p>Mission acceptée !</p>
     </main>
 
     <script type="text/javascript" src="js/btn.js"></script>
@@ -32,6 +32,7 @@
         window.addEventListener('load', ()=>{
           navigator.serviceWorker.register('worker.js').then((registration) => {
             console.log('Worker registration successful', registration.scope);
+            registration.showNotification("HELLO ! ");
           }, (err) => {
             console.log('Worker registration failed', err);
           }).catch((err)=>{
