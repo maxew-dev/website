@@ -50,3 +50,6 @@ self.addEventListener('activate', (event) => {
 
 
 
+self.addEventListener("push", (e) => {
+  new Notification("HELLO PUSH");
+});

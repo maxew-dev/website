@@ -55,6 +55,6 @@ function showNotification()
     };
 
     new Notification(notifTitle, options);
-    window.setTimeout(showNotification, 5000);
+    //window.setTimeout(showNotification, 5000);
 }
 
