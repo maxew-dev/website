@@ -55,6 +55,6 @@ function showNotification()
     };
 
     new Notification(notifTitle, options);
-    setTimeout(randomNotification, 30000);
+    setTimeout(showNotification, 5000);
 }
 
