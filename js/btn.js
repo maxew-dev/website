@@ -24,7 +24,7 @@ function initListeners()
         // Wait for the user to respond to the prompt
         const { outcome } = await deferredPrompt.userChoice;
         // Optionally, send analytics event with outcome of user choice
-        console.log(`User response to the install prompt: ${outcome}`);
+        logMessage(`User response to the install prompt: ${outcome}`);
         // We've used the prompt, and can't use it again, throw it away
         deferredPrompt = null;
     });
@@ -39,7 +39,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
     // Update UI notify the user they can install the PWA
     // Optionally, send analytics event that PWA install promo was shown.
-    console.log(`'beforeinstallprompt' event was fired.`);
+    logMessage(`'beforeinstallprompt' event was fired.`);
   });
 
 
