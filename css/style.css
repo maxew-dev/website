@@ -25,3 +25,11 @@ button{
 button:hover, button:active{
     filter:invert();
 }
+
+#logger{
+    width:100%;
+    height:auto;
+    padding:10px;
+    background-color: antiquewhite;
+    position:relative;
+}
