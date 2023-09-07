@@ -23,16 +23,20 @@
         <img src="icons/icon144.png" alt="">
 
         <p>Mission acceptée !</p>
+        <a href="index.html" >Retour Home</a>
+
+        <div id="logger">
+
+        </div>
     </main>
 
-    <script type="text/javascript" src="js/btn.js"></script>
+    <script type="text/javascript" src="js/logger.js"></script>
 
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', ()=>{
           navigator.serviceWorker.register('worker.js').then((registration) => {
-            logMessage('Worker registration successful', registration.scope);
-            registration.showNotification("HELLO ! ");
+            logMessage('Worker registration successful (page 2)', registration.scope);
           }, (err) => {
             logMessage('Worker registration failed', err);
           }).catch((err)=>{

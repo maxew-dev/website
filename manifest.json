@@ -1,10 +1,11 @@
 {
     "name": "MaxApp",
     "short_name": "max",
-    "start_url": "index.html",
-    "id":"website/index.html",
+    "start_url": "/",
+    "id":"website_index",
     "display": "standalone",
     "background_color":"grey",
+    "theme_color":"#ffffff",
     "lang": "fr",
     "description":"My App Prototype",
     "orientation": "portrait-primary",

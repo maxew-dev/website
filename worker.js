@@ -6,7 +6,7 @@ var urlsToCache = [
 
 // Install a service worker
 self.addEventListener('install', (event) => {
-  logMessage("serviceWorker installing...")
+  logMessage("serviceWorker installing...");
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -48,8 +48,8 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-
+/*
 
 self.addEventListener("push", (e) => {
   new Notification("HELLO PUSH");
-});
+});*/
